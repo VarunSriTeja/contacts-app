@@ -3,7 +3,7 @@
 A contact management web app built using **React** and **plain CSS**.
 
 🌐 Deployment
-Deployed on Vercel: [[Your Live App Link Here]](https://contacts-app-umber.vercel.app/)
+Deployed on Vercel: [[App Link Here]](https://contacts-app-umber.vercel.app/)
 
 ## ✨ Features
 - View, search, and add contacts
