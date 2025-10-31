@@ -25,7 +25,7 @@ Deployed on Vercel: [[Your Live App Link Here]](https://contacts-app-umber.verce
    
 ## Install dependencies
  1.  ```bash
-   npm install
+     npm install
 
 ## Start the app
 1. ```bash
