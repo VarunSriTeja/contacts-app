@@ -14,15 +14,13 @@ function App() {
 });
 
 
-  const [currentView, setCurrentView] = useState("list"); // "list" | "add" | "search"
+  const [currentView, setCurrentView] = useState("list"); 
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Save to localStorage whenever contacts change
   useEffect(() => {
     localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
-  // Add new contact
   const addContact = (newContact) => {
     const updated = [...contacts, newContact].sort((a, b) =>
       a.name.localeCompare(b.name)
@@ -31,7 +29,6 @@ function App() {
     setCurrentView("list");
   };
 
-  // Delete contact
   const deleteContact = (id) => {
     setContacts(contacts.filter((c) => c.id !== id));
   };
