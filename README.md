@@ -21,12 +21,14 @@ Deployed on Vercel: [[Your Live App Link Here]](https://contacts-app-umber.verce
 ## 💻 Run Locally
 1. Clone the repository  
    ```bash
-   git clone https://github.com/<your-username>/contact-list-app.git
+   git clone https://github.com/VarunSriTeja/contacts-app.git
    
 ## Install dependencies
-npm install
+ 1.  ```bash
+   npm install
 
 ## Start the app
-npm start
+1. ```bash
+   npm start
 
 Visit http://localhost:3000
