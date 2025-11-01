@@ -1,31 +1,30 @@
 import React from "react";
+import { FaPlus, FaSearch } from "react-icons/fa";
 
-function Header({ currentView, setCurrentView }) {
-    const showBack = currentView !== "list";
+function Header({ searchTerm, setSearchTerm, onAddClick }) {
+  return (
+    <div className="header">
+      <h2>Contacts</h2>
 
-    return (
-        <div className="header">
-            {showBack ? (
-                <button className="icon" onClick={() => setCurrentView("list")}>
-                    ←
-                </button>
-            ) : (
-                <h2>Contacts</h2>
-            )}
+      <div className={`search-container ${searchTerm ? "glow-active" : ""}`}>
+        <FaSearch className="search-icon" />
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="header-search"
+        />
+      </div>
 
-            {!showBack && (
-                <div className="header-icons">
-                    <button className="icon" onClick={() => setCurrentView("search")}>
-                        ⌕
-                    </button>
-                    <button className="icon" onClick={() => setCurrentView("add")}>
-                        ＋
-                    </button>
-
-                </div>
-            )}
-        </div>
-    );
+      <div className="header-icons">
+        <button className="add-contact-btn" onClick={onAddClick}>
+          <FaPlus className="add-icon" />
+          <span className="add-text">Add Contact</span>
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default Header;
