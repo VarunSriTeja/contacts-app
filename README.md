@@ -11,7 +11,8 @@ Deployed on Vercel: [[App Link Here]](https://contacts-app-umber.vercel.app/)
 - Delete contacts with confirmation
 - Persistent data using localStorage
 - Alphabetically sorted contact list
-- Responsive and futuristic UI design
+- Option for Favorite contacts
+- Scroll directly to required alphabet contacts
 
 ## 🧩 Tech Stack
 - React.js
